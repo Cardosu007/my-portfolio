@@ -14,6 +14,13 @@ const Hero = () => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
+        [theme.breakpoints.up('xs')]: {
+            paddingTop: "100px",
+        },
+
+        [theme.breakpoints.up('md')]: {
+            paddingTop: "0px",
+        }
     }))
 
     const StyledImg = styled("img")(({ theme }) => ({
