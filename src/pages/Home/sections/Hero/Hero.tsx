@@ -3,7 +3,6 @@ import Avatar from "../../../../assets/images/avatar1.jpg"
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
 
 const Hero = () => {
@@ -52,13 +51,13 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center">I am a Front-End Developer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                            <StyledButton>
+                            <StyledButton onClick={()=> console.log("download")}>
                                 <DownloadIcon/>
                             <Typography>Download CV</Typography>
                             </StyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={()=> console.log("contact")}>
                             <MailOutlineIcon/>
                                 <Typography>Contact me</Typography>
                                 </StyledButton>
